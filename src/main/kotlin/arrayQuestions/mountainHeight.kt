@@ -20,15 +20,3 @@ Output:
 For each testcase, output one line with one integer: the height of the tallest mountain for that test case.
 
  */
-
-fun main() {
-    val t = readLine()!!.toInt()  // Number of test cases
-
-    repeat(t) {
-        val n = readLine()!!.toInt()  // Number of mountains
-        val heights = readLine()!!.split(" ").map { it.toInt() }  // Heights of the mountains
-
-        val maxHeight = heights.maxOrNull() ?: 0  // Find the maximum height
-        println(maxHeight)
-    }
-}
