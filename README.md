@@ -11,3 +11,5 @@
 * [Blobby Volley Scores](src/main/kotlin/stringQuestions/BlobbyVoleyScores.kt)
 
 ## Array Questions
+* [Mountain Height](src/main/kotlin/arrayQuestions/mountainHeight.kt)
+* [Search an Elementary Array](src/main/kotlin/arrayQuestions/searchAnElementInArray.kt)
