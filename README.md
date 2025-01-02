@@ -12,4 +12,4 @@
 
 ## Array Questions
 * [Cost of Groceries](src/main/kotlin/arrayQuestions/CostOfGroceries.kt)
-* [Search an Elementary Array](src/main/kotlin/arrayQuestions/searchAnElementInArray.kt)
+* [Running Comparison](src/main/kotlin/arrayQuestions/RunningComparison.kt)
