@@ -11,5 +11,5 @@
 * [Blobby Volley Scores](src/main/kotlin/stringQuestions/BlobbyVoleyScores.kt)
 
 ## Array Questions
-* [Cost of Groceries](src/main/kotlin/arrayQuestions/mountainHeight.kt)
+* [Cost of Groceries](src/main/kotlin/arrayQuestions/CostOfGroceries.kt)
 * [Search an Elementary Array](src/main/kotlin/arrayQuestions/searchAnElementInArray.kt)
