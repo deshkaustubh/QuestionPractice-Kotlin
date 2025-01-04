@@ -15,3 +15,4 @@
 * [Running Comparison](src/main/kotlin/arrayQuestions/RunningComparison.kt)
 * [Take Discount or Not](src/main/kotlin/arrayQuestions/TakeDiscountOrNot.kt)
 * [Largest and Second Largest](src/main/kotlin/arrayQuestions/LargestAndSecondLargest.kt)
+* [Difficulty Rating Order](src/main/kotlin/arrayQuestions/DifficultyRatingOrder.kt)
