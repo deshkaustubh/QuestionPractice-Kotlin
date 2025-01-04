@@ -14,3 +14,4 @@
 * [Cost of Groceries](src/main/kotlin/arrayQuestions/CostOfGroceries.kt)
 * [Running Comparison](src/main/kotlin/arrayQuestions/RunningComparison.kt)
 * [Take Discount or Not](src/main/kotlin/arrayQuestions/TakeDiscountOrNot.kt)
+* [Largest and Second Largest](src/main/kotlin/arrayQuestions/LargestAndSecondLargest.kt)
