@@ -1,6 +1,7 @@
 # Kotlin Question Practice 
 
 ## String Questions
+
 * [DNA Storage](src/main/kotlin/stringQuestions/DNAStorage.kt)
 * [Wordle](src/main/kotlin/stringQuestions/Wordle.kt)
 * [Different Consecutive Characters](src/main/kotlin/stringQuestions/DifferentConsecutiveCharacters.kt)
@@ -11,6 +12,7 @@
 * [Blobby Volley Scores](src/main/kotlin/stringQuestions/BlobbyVoleyScores.kt)
 
 ## Array Questions
+
 * [Cost of Groceries](src/main/kotlin/arrayQuestions/CostOfGroceries.kt)
 * [Running Comparison](src/main/kotlin/arrayQuestions/RunningComparison.kt)
 * [Take Discount or Not](src/main/kotlin/arrayQuestions/TakeDiscountOrNot.kt)
