@@ -17,4 +17,23 @@ For each test case, print a single line containing the string S converted into t
  */
 
 
-// Can't Figure out
+// Can't Figure out -> Solution seen
+
+fun convertToTitleCase(s: String): String {
+    return s.split(" ").joinToString(" ") { word ->
+        if (word.all { it.isUpperCase() }) {
+            word // Keep acronyms unchanged
+        } else {
+            word.toLowerCase().capitalize() // Convert to title case
+        }
+    }
+}
+
+fun main() {
+    val T = readLine()!!.toInt()
+    repeat(T) {
+        val S = readLine()!!
+        println(convertToTitleCase(S))
+    }
+}
+
