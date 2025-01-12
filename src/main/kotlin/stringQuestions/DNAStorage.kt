@@ -35,22 +35,28 @@ For each test case, output in a single line the encoded sequence.
 Note: Output is case-sensitive.
 */
 
+// My Kotlin Code
 fun main() {
-    val t = readln().toInt()  // Read the number of test cases
+    val t = readLine()!!.toInt()  // Read the number of test cases
     repeat(t) {
-        val n = readln().toInt()  // Read the length of the binary string
-        val s = readln()          // Read the binary string
+        val s = readLine()!!          // Read the binary string
 
-        val result = StringBuilder()  // Initialize an empty StringBuilder for the result
-        for (i in 0 until n step 2) {
-            val pair = s.substring(i, i + 2)  // Get each pair of characters
-            when (pair) {
-                "00" -> result.append('A')
-                "01" -> result.append('T')
-                "10" -> result.append('C')
-                "11" -> result.append('G')
-            }
-        }
-        println(result.toString())  // Output the encoded sequence
+        println(solve(s))  // Output the encoded sequence
     }
+}
+
+fun solve(s: String): String {
+    val result = StringBuilder()  // Initialize an empty StringBuilder for the result
+    val n = readLine()!!.toInt()  // Read the length of the binary string
+
+    for (i in 0 until n step 2) {
+        val pair = s.substring(i, i + 2)  // Get each pair of characters
+        when (pair) {
+            "00" -> result.append('A')
+            "01" -> result.append('T')
+            "10" -> result.append('C')
+            "11" -> result.append('G')
+        }
+    }
+    return result.toString()
 }
