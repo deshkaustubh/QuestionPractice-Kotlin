@@ -98,11 +98,15 @@ fun main () {
         val S = readLine()!!
         val T = readLine()!!
 
-        var M = ""
-        for ( i in S.indices){
-            if( S[i] == T[i]) M += "G"
-            else M += "B"
-        }
-        println(M)
+        println(Wordle (S, T))
     }
+}
+
+fun Wordle (S: String, T: String): String {
+    var M = ""
+    for ( i in S.indices){
+        if( S[i] == T[i]) M = M+"G"
+        else M = M+"B"
+    }
+    return M
 }
