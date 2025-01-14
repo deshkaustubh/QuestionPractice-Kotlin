@@ -18,7 +18,6 @@ For each test case, print a single line containing the string S converted into t
 
 
 // Can't Figure out -> Solution seen
-// Solution Seen
 
 fun convertToTitleCase(s: String): String {
     return s.split(" ").joinToString(" ") { word ->
@@ -37,15 +36,4 @@ fun main() {
         println(convertToTitleCase(S))
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 

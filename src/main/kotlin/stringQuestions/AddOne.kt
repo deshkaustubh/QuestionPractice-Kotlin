@@ -37,17 +37,16 @@ N+1.
 
 import java.math.BigInteger
 
-fun main () {
+fun main() {
     val T = readLine()!!.toInt()  // Test Cases
-    val N = readLine()!! // Reading input as a Integer
 
     repeat(T) {
-        addOne(N)
+        val N = readLine()!! // Reading input as a Integer
+        println(addOneToBigInteger(N))
     }
 }
 
-fun addOne(N: String): BigInteger {
+fun addOneToBigInteger(N: String): BigInteger {
     val bigIntN = BigInteger(N)
-    val result = bigIntN.add(BigInteger.ONE)
-    return result
+    return bigIntN.add(BigInteger.ONE)
 }
