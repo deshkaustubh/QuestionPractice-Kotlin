@@ -39,11 +39,15 @@ import java.math.BigInteger
 
 fun main () {
     val T = readLine()!!.toInt()  // Test Cases
+    val N = readLine()!! // Reading input as a Integer
 
     repeat(T) {
-        val N = readLine()!! // Reading input as a Integer
-        val bigIntN = BigInteger(N)
-        val result = bigIntN.add(BigInteger.ONE)
-        println(result)
+        addOne(N)
     }
+}
+
+fun addOne(N: String): BigInteger {
+    val bigIntN = BigInteger(N)
+    val result = bigIntN.add(BigInteger.ONE)
+    return result
 }

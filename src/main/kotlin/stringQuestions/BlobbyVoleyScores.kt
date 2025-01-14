@@ -50,24 +50,28 @@ For each test case, output on a new line, two space-separated integers - Alice's
 
 fun main () {
     val T = readLine()!!.toInt()
+    val N = readLine()!!.toInt()
+    val S = readLine()!!
 
     repeat(T){
-        val N = readLine()!!.toInt()
-        val S = readLine()!!
-
-        var serverIsA = true
-        var aliceScore = 0
-        var bobScore = 0
-        for (i in S.indices) {
-            when {
-                // Score Calculation
-                serverIsA && S[i] == 'A' -> aliceScore++
-                !serverIsA && S[i] == 'B' -> bobScore++
-                // Server Selection
-                !serverIsA && S[i] == 'A' -> serverIsA = true
-                serverIsA && S[i] == 'B' -> serverIsA = false
-            }
-        }
-        println("$aliceScore $bobScore")
+        blobbyVoleyScores(S)
     }
+}
+
+fun blobbyVoleyScores(S: String) {
+
+    var serverIsA = true
+    var aliceScore = 0
+    var bobScore = 0
+    for (i in S.indices) {
+        when {
+            // Score Calculation
+            serverIsA && S[i] == 'A' -> aliceScore++
+            !serverIsA && S[i] == 'B' -> bobScore++
+            // Server Selection
+            !serverIsA && S[i] == 'A' -> serverIsA = true
+            serverIsA && S[i] == 'B' -> serverIsA = false
+        }
+    }
+    println("$aliceScore $bobScore")
 }

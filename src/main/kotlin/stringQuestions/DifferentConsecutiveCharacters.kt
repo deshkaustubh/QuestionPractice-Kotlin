@@ -61,3 +61,7 @@ fun main () {
     }
 
 }
+
+fun differentConsecutiveCharacters () {
+
+}
