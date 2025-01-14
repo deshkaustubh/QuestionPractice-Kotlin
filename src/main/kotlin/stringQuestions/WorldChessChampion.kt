@@ -79,23 +79,25 @@ fun main() {
 
     repeat(t) {
         val x = sc.nextInt()
-        val totalprize = 100 * x
-
         val s = sc.next()
-        var c = 0
-        var n = 0
-        var d = 0
-        for (i in s.indices) {
-            when (s[i]) {
-                'C' -> c++
-                'N' -> n++
-                else -> d++
-            }
+        println(calculatePrize(x, s))
+    }
+}
+
+fun calculatePrize(x: Int, s: String): Int {
+    var c = 0
+    var n = 0
+    var d = 0
+    for (i in s.indices) {
+        when (s[i]) {
+            'C' -> c++
+            'N' -> n++
+            else -> d++
         }
-        when {
-            c > n -> println(60 * x)
-            c == n -> println(55 * x)
-            else -> println(40 * x)
-        }
+    }
+    return when {
+        c > n -> 60 * x
+        c == n -> 55 * x
+        else -> 40 * x
     }
 }
