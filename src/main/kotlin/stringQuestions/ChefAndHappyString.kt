@@ -35,28 +35,21 @@ fun main() {
 
     repeat(T) {
         val S = readLine()!!  // Read the string
-        var vowelCount = 0
-        var isHappy = false
-
-        for (i in S.indices) {
-            if (S[i] in listOf('a', 'e', 'i', 'o', 'u')) {
-                vowelCount++
-                if (vowelCount > 2) {
-                    println("HAPPY")
-                    isHappy = true
-                    break
-                }
-            } else {
-                vowelCount = 0
-            }
-        }
-
-        if (!isHappy) {
-            println("SAD")
-        }
+        println(checkHappiness(S))
     }
 }
 
-fun ChefandHappyString() {
-
+fun checkHappiness(S: String): String {
+    var vowelCount = 0
+    for (i in S.indices) {
+        if (S[i] in listOf('a', 'e', 'i', 'o', 'u')) {
+            vowelCount++
+            if (vowelCount > 2) {
+                return "HAPPY"
+            }
+        } else {
+            vowelCount = 0
+        }
+    }
+    return "SAD"
 }
