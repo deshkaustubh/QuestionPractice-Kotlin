@@ -48,21 +48,21 @@ Output Format
 For each test case, output on a new line, two space-separated integers - Alice's final score, and Bob's final score.
  */
 
-fun main () {
+fun main() {
     val T = readLine()!!.toInt()
-    val N = readLine()!!.toInt()
-    val S = readLine()!!
 
-    repeat(T){
-        blobbyVoleyScores(S)
+    repeat(T) {
+        val N = readLine()!!.toInt()
+        val S = readLine()!!
+        println(calculateScores(N, S))
     }
 }
 
-fun blobbyVoleyScores(S: String) {
-
+fun calculateScores(N: Int, S: String): String {
     var serverIsA = true
     var aliceScore = 0
     var bobScore = 0
+
     for (i in S.indices) {
         when {
             // Score Calculation
@@ -73,5 +73,5 @@ fun blobbyVoleyScores(S: String) {
             serverIsA && S[i] == 'B' -> serverIsA = false
         }
     }
-    println("$aliceScore $bobScore")
+    return "$aliceScore $bobScore"
 }
