@@ -35,18 +35,44 @@ N
 N+1.
  */
 
-import java.math.BigInteger
+//import java.math.BigInteger
+//
+//fun main() {
+//    val T = readLine()!!.toInt()  // Test Cases
+//
+//    repeat(T) {
+//        val N = readLine()!! // Reading input as a Integer
+//        println(addOneToBigInteger(N))
+//    }
+//}
+//
+//fun addOneToBigInteger(N: String): BigInteger {
+//    val bigIntN = BigInteger(N)
+//    return bigIntN.add(BigInteger.ONE)
+//}
 
-fun main() {
-    val T = readLine()!!.toInt()  // Test Cases
 
-    repeat(T) {
-        val N = readLine()!! // Reading input as a Integer
-        println(addOneToBigInteger(N))
+fun addOne (n: String): String {
+    val digits = n.map { it - '0' }.toMutableList()
+    var carry = 1
+
+    for ( i in digits.size -1 downTo 0) {
+        val sum = digits[i] + carry
+
+        if ( sum == 10) {
+            digits[i] = 0
+            carry = 1
+        }
+        else {
+            digits[i] = sum
+            carry = 0
+            break
+        }
     }
-}
 
-fun addOneToBigInteger(N: String): BigInteger {
-    val bigIntN = BigInteger(N)
-    return bigIntN.add(BigInteger.ONE)
+    if ( carry == 1) {
+        digits.add(0,1)
+    }
+    return digits.joinToString("")
+
 }
