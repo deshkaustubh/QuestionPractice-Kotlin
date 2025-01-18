@@ -98,7 +98,7 @@ fun main () {
         val S = readLine()!!
         val T = readLine()!!
 
-        println(Wordle (S, T))
+        println(wordleUsingBuildString(S, T))
     }
 }
 
