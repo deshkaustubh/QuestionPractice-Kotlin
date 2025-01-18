@@ -10,6 +10,7 @@
 * [Add One](src/main/kotlin/stringQuestions/AddOne.kt)
 * [Chef and Happy String](src/main/kotlin/stringQuestions/ChefAndHappyString.kt)
 * [Blobby Volley Scores](src/main/kotlin/stringQuestions/BlobbyVoleyScores.kt)
+* [List Reversal By Creating New List](src/main/kotlin/stringQuestions/ReverseList.kt)
 
 ## Array Questions
 
