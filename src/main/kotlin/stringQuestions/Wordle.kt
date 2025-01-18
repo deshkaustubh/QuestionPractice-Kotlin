@@ -110,3 +110,12 @@ fun Wordle (S: String, T: String): String {
     }
     return M
 }
+
+fun wordleUsingBuildString(S: String, T: String): String {
+    return buildString {
+        for (i in S.indices) {
+            if(S[i] == T[i]) append('G')
+            else append('B')
+        }
+    }
+}
