@@ -21,3 +21,4 @@
 * [Largest and Second Largest](src/main/kotlin/arrayQuestions/LargestAndSecondLargest.kt)
 * [Difficulty Rating Order](src/main/kotlin/arrayQuestions/DifficultyRatingOrder.kt)
 * [Min to Max](src/main/kotlin/arrayQuestions/MinToMax.kt)
+* [Third Largest, Second Largest and Largest](src/main/kotlin/arrayQuestions/ThirdLargestSum.kt)
