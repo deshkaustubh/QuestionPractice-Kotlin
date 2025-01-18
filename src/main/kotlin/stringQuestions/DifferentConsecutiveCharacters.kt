@@ -45,23 +45,23 @@ S
 S.
  */
 
-fun main () {
+
+fun main() {
     val T = readLine()!!.toInt()
 
-    repeat(T){
+    repeat(T) {
         val N = readLine()!!.toInt()
         val S = readLine()!!
 
-        var result = 0
-
-        for ( i in 0 until N-1){
-            if( S[i] == S[i+1]) result = result + 1
-        }
-        println(result)
+        println(minOperations(S, N))
     }
-
 }
 
-fun differentConsecutiveCharacters () {
-
+fun minOperations(S: String, N: Int): Int {
+    var result = 0
+    for (i in 0 until N - 1) {
+        if (S[i] == S[i + 1]) result++
+    }
+    return result
 }
+
