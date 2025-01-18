@@ -41,7 +41,7 @@ fun main() {
     repeat(t) {
         val s = readLine()!!          // Read the binary string
 
-        println(solve(s))  // Output the encoded sequence
+        println(solveUsingStringBuilder(s))  // Output the encoded sequence
     }
 }
 
@@ -59,4 +59,19 @@ fun solve(s: String): String {
         }
     }
     return result.toString()
+}
+
+fun solveUsingStringBuilder(s: String): String {
+    val n = s.length
+    return buildString {
+        for (i in 0 until n step 2) {
+            val pair = s.substring(i, i+2)
+            when (pair) {
+                "00" -> append('A')
+                "01" -> append('T')
+                "10" -> append('C')
+                "11" -> append('G')
+            }
+        }
+    }
 }
