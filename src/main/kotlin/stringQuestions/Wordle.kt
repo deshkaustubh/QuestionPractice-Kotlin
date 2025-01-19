@@ -92,11 +92,11 @@ bgbgb will all be treated as identical).
  */
 
 fun main () {
-    val T = readLine()!!.toInt()
+    val T = readln().toInt()
 
     repeat(T) {
-        val S = readLine()!!
-        val T = readLine()!!
+        val S = readln()
+        val T = readln()
 
         println(wordleUsingBuildString(S, T))
     }
@@ -105,8 +105,8 @@ fun main () {
 fun Wordle (S: String, T: String): String {
     var M = ""
     for ( i in S.indices){
-        if( S[i] == T[i]) M = M+"G"
-        else M = M+"B"
+        if( S[i] == T[i]) M += "G"
+        else M += "B"
     }
     return M
 }
