@@ -11,10 +11,6 @@ fun main() {
 fun listReversal(list: List<Int>): List<Int>{
     val reversedList = mutableListOf<Int>()
 
-    if(list.isEmpty()) {
-        return listOf(0)
-    }
-
     for ( i in list.size - 1 downTo 0) {
         reversedList.add(list[i])
     }
