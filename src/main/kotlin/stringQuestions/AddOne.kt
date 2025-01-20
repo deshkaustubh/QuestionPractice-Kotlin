@@ -59,15 +59,8 @@ fun addOne (n: String): String {
     for ( i in digits.size -1 downTo 0) {
         val sum = digits[i] + carry
 
-        if ( sum == 10) {
-            digits[i] = 0
-            carry = 1
-        }
-        else {
-            digits[i] = sum
-            carry = 0
-            break
-        }
+        digits[i] = sum % 10
+        carry = sum / 10
     }
 
     if ( carry == 1) {
@@ -75,4 +68,12 @@ fun addOne (n: String): String {
     }
     return digits.joinToString("")
 
+}
+
+fun main() {
+    val t = readln().toInt()
+    repeat(t) {
+        val n = readln()
+        println(addOne(n))
+    }
 }

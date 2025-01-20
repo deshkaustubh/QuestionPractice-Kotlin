@@ -1,14 +1,22 @@
 package org.example.stringQuestions
 
-fun main() {
-    val list = mutableListOf(1, 2, 3, 4, 5, 6)
-    println(reversedList(list))
-}
+// Library Functions ❌❌❌
+// Mutable List ❌❌❌
+// Adds from last and removes from front
 
-fun reversedList(list: MutableList<Int>): List<Int> {
-    for(i in list.size-1 downTo 0) {
-        var tempInt: Int = list.removeAt(i)
-        list.add(tempInt)
-    }
-    return list
-}
+//fun main() {
+//    val list = listOf(1, 2, 3, 4, 5, 6)
+//    println(reversedList(list))
+//}
+
+//fun reversedList(list: List<Int>): List<Int> {
+//
+//    var countBackward = list.size
+//    var countForward = 0
+//    repeat(list.size) {
+//        val temp = list[it]
+//        list[countForward] = temp
+//    }
+//
+//    return list
+//}
