@@ -30,10 +30,10 @@ fun convertToTitleCase(s: String): String {
 }
 
 fun main() {
-    val T = readLine()!!.toInt()
-    repeat(T) {
-        val S = readLine()!!
-        println(convertToTitleCase(S))
+    val t = readln().toInt()
+    repeat(t) {
+        val s = readln()
+        println(convertToTitleCase(s))
     }
 }
 
