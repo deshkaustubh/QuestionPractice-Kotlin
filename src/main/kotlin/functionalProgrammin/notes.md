@@ -9,4 +9,14 @@
 * For example, if s = "abc" and t = "abd", the zip function produces [(a, a), (b, b), (c, d)]
 
 ### Windowed
-* 
+* The windowed function creates windows of a specified size from the original collection or string.
+* Each window is a list containing elements from the original collection.
+* You can specify a step parameter to control the step size between windows, which determines the overlap.
+* Example 
+val numbers = listOf(1, 2, 3, 4, 5)
+
+val windows = numbers.windowed(3, step = 2)
+
+println(windows)  // Output: [[1, 2, 3], [3, 4, 5]]
+* If you want to include a window that is smaller than the specified size you have to use partial window = true 
+* Example -> val windows = numbers.windowed(3, partialWindows = true)
