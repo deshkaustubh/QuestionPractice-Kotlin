@@ -47,13 +47,13 @@ S.
 
 
 fun main() {
-    val T = readLine()!!.toInt()
+    val t = readln().toInt()
 
-    repeat(T) {
-        val N = readLine()!!.toInt()
-        val S = readLine()!!
+    repeat(t) {
+        val n = readln().toInt()
+        val s = readln()
 
-        println(minOperations(S, N))
+        println(minOperations(s, n))
     }
 }
 

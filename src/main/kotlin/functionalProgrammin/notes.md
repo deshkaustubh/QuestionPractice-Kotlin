@@ -7,3 +7,6 @@
 ### Zip
 * The zip function in Kotlin is a powerful tool used to merge two collections into a single collection of pairs. This function combines elements from both collections based on their positions, creating pairs where the first element is from the first collection and the second element is from the second collection.
 * For example, if s = "abc" and t = "abd", the zip function produces [(a, a), (b, b), (c, d)]
+
+### Windowed
+* 
