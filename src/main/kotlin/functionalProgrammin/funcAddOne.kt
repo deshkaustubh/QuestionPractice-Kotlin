@@ -1,7 +1,5 @@
 package org.example.functionalProgrammin
 
-import org.example.stringQuestions.addOne
-
 fun funcAddOne(n: String): String {
     var carry = 1
     val newN = n.reversed().map { char->
