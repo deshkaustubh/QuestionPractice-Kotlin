@@ -18,3 +18,12 @@
   * println(windows)  // Output: [[1, 2, 3], [3, 4, 5]]
 * If you want to include a window that is smaller than the specified size you have to use partial window = true 
 * Example -> val windows = numbers.windowed(3, partialWindows = true)
+
+### foldIndexed
+* foldIndexed is like a specialized loop that keeps track of the index as it sums up or processes values.
+* Example 
+  * val numbers = listOf(1, 2, 3, 4, 5)
+  * val result = numbers.foldIndexed(0) { index, sum, number ->
+  * if (index % 2 == 0) sum + number else sum
+  * }
+  
