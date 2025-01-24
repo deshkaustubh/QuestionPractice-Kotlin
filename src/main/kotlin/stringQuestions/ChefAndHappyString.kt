@@ -31,11 +31,11 @@ You may print each character of the string in uppercase or lowercase (for exampl
 
 
 fun main() {
-    val T = readLine()!!.toInt()  // Number of test cases
+    val t = readln().toInt()  // Number of test cases
 
-    repeat(T) {
-        val S = readLine()!!  // Read the string
-        println(checkHappiness(S))
+    repeat(t) {
+        val s = readln()  // Read the string
+        println(checkHappiness(s))
     }
 }
 
