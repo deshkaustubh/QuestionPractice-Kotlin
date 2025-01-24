@@ -49,9 +49,9 @@ For each test case, output on a new line, two space-separated integers - Alice's
  */
 
 fun main() {
-    val T = readLine()!!.toInt()
+    val t = readln().toInt()
 
-    repeat(T) {
+    repeat(t) {
         val n = readln().toInt()
         val s = readln()
         println(calculateScores(n, s))
