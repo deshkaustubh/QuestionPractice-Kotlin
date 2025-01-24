@@ -52,9 +52,9 @@ fun main() {
     val T = readLine()!!.toInt()
 
     repeat(T) {
-        val N = readLine()!!.toInt()
-        val S = readLine()!!
-        println(calculateScores(N, S))
+        val n = readln().toInt()
+        val s = readln()
+        println(calculateScores(n, s))
     }
 }
 
