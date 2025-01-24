@@ -58,19 +58,19 @@ fun main() {
     }
 }
 
-fun calculateScores(N: Int, S: String): String {
+fun calculateScores(n: Int, s: String): String {
     var serverIsA = true
     var aliceScore = 0
     var bobScore = 0
 
-    for (i in S.indices) {
+    for (i in s.indices) {
         when {
             // Score Calculation
-            serverIsA && S[i] == 'A' -> aliceScore++
-            !serverIsA && S[i] == 'B' -> bobScore++
+            serverIsA && s[i] == 'A' -> aliceScore++
+            !serverIsA && s[i] == 'B' -> bobScore++
             // Server Selection
-            !serverIsA && S[i] == 'A' -> serverIsA = true
-            serverIsA && S[i] == 'B' -> serverIsA = false
+            !serverIsA && s[i] == 'A' -> serverIsA = true
+            serverIsA && s[i] == 'B' -> serverIsA = false
         }
     }
     return "$aliceScore $bobScore"
