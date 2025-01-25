@@ -26,4 +26,3 @@
   * val result = numbers.foldIndexed(0) { index, sum, number ->
   * if (index % 2 == 0) sum + number else sum
   * }
-  
