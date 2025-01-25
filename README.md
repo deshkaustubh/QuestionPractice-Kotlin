@@ -24,3 +24,9 @@
 * [Third Largest, Second Largest and Largest](src/main/kotlin/arrayQuestions/ThirdLargestSum.kt)
 
 ## Functional Programming Implementation
+
+* [Use of Chunked](src/main/kotlin/functionalProgrammin/task1Chunked.kt)
+* [Use of Zip with String](src/main/kotlin/functionalProgrammin/task2Zip.kt)
+* [Use of Zip with List](src/main/kotlin/functionalProgrammin/task3ZipList.kt)
+* [Use of Windowed](src/main/kotlin/functionalProgrammin/task4Windowed.kt)
+* [Noteworthy points](src/main/kotlin/functionalProgrammin/notes.md)
