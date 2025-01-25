@@ -29,10 +29,10 @@ For each test case, output on a new line, the maximum sum of two distinct intege
  */
 
 fun main() {
-    val t = readLine()!!.toInt()
+    val t = readln().toInt()
     repeat(t) {
-        val n = readLine()!!.toInt()
-        val a = readLine()!!.split(" ").map { it.toInt() }
+        val n = readln().toInt()
+        val a = readln().split(" ").map { it.toInt() }
         checkForTheSum(n, a)
     }
 }
