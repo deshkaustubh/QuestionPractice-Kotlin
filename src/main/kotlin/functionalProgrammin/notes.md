@@ -26,3 +26,7 @@
   * val result = numbers.foldIndexed(0) { index, sum, number ->
   * if (index % 2 == 0) sum + number else sum
   * }
+
+### toSet 
+* The toSet function in Kotlin is used to convert a collection (such as a list) into a set. A set is a collection that contains no duplicate elements and maintains no specific order.
+* The resulting set is an immutable set. If you need a mutable set, you can use toMutableSet() instead.
