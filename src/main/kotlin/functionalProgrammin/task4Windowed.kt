@@ -2,8 +2,8 @@ package org.example.functionalProgrammin
 
 fun main() {
     val givenString = "00101110"
-    println(iterativeWindowed(givenString, 3, ))
-    println(windowed(givenString, 3, ))
+    println(iterativeWindowed(givenString, 4, ))
+    println(windowed(givenString, 4, ))
 }
 
 fun windowed(string: String, size: Int, step: Int = 1): List<String> {
@@ -27,7 +27,7 @@ fun iterativeWindowed(string: String, size: Int, step: Int = 1): List<String> {
                 tempInt++
             }
         }
-        if(tempString.length == 3)  outputList.add(tempString)
+        if(tempString.length == size)  outputList.add(tempString) // This is because by default windowed omits if in case elements are less than the specified size but this can be changed if you set partialWindows to true
         counter += step
     }
     return outputList
