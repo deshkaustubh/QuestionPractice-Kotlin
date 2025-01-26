@@ -27,7 +27,7 @@ fun iterativeWindowed(string: String, size: Int, step: Int = 1): List<String> {
                 tempInt++
             }
         }
-        outputList.add(tempString)
+        if(tempString.length == 3)  outputList.add(tempString)
         counter += step
     }
     return outputList
