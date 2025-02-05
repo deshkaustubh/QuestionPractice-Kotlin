@@ -31,15 +31,15 @@ fun windowed(string: String, size: Int, step: Int = 1): List<String> {
 
 fun iterativeWindowed(string: String, size: Int, step: Int = 1): List<String> {
     return buildList {
-            var i = 0
-            while (i <= string.length-size) {
-        buildString {
+        var i = 0
+        while (i <= string.length-size) {
+            buildString {
                 repeat(size) {
                     append(string[i + it])
                 }
-            add(toString())
+                add(toString())
             }
-                i += step
+            i += step
         }
     }
 }
