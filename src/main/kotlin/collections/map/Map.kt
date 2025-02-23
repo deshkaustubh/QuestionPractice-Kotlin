@@ -27,3 +27,4 @@ fun main() {
         println("DOB of $name not found!")
     }
 }
+// need for map -> uses hashing so that time complexity is O(1)
