@@ -1,8 +1,7 @@
 package collections.advancedOperations
 
-
 // Used to count the number of elements in a collection that match a given predicate / condition
-
+// overall time complexity O(n)
 fun main() {
     val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
