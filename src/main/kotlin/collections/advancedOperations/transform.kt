@@ -55,7 +55,7 @@ fun transformAllEntriesOfAMap() {
 
     val newMap = mapTransform.map{
         it.key.uppercase() to "${it.value} Trillion"
-    }.toMap()
+    }.toMap() // because it returns List<Pair<k,v>> , to convert it into map, we have done toMap()
 
     println(newMap)
 }
