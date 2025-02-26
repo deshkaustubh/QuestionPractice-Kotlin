@@ -33,8 +33,8 @@ data class Person(
 
 fun associateExampleOOPS() {
     val persons = listOf(
-        Person("A1", "Alpha"),
-        Person("B1", "Beta")
+        People("A1", "Alpha"),
+        People("B1", "Beta")
     )
 
     val idToNameMap = persons.associate {

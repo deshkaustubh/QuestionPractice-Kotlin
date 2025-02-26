@@ -24,8 +24,8 @@ fun associateBy() {
 
 fun associateByOOPS() {
     val persons = listOf(
-        Person("A1", "Alpha"),
-        Person("B1", "Beta")
+        People("A1", "Alpha"),
+        People("B1", "Beta")
     )
     val idToPersonMap = persons.associateBy { it.id }
     println(idToPersonMap)
