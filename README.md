@@ -30,3 +30,7 @@
 * [Use of Zip with List](src/main/kotlin/functionalProgrammin/task3ZipList.kt)
 * [Use of Windowed](src/main/kotlin/functionalProgrammin/task4Windowed.kt)
 * [Noteworthy points](src/main/kotlin/functionalProgrammin/notes.md)
+
+## Collections - Concept
+### Map
+* [Map](src/main/kotlin/collections/map)
